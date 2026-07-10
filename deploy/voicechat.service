@@ -1,0 +1,13 @@
+# /etc/systemd/system/voicechat.service → systemctl daemon-reload && systemctl enable --now voicechat
+[Unit]
+Description=VoiceChat
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/voicechat
+ExecStart=/usr/bin/node server.js
+Restart=always
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
