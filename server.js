@@ -19,7 +19,7 @@ const DEFAULT_ROOM = 'общий';
 const CALL_PREFIX = 'звонок-';      // скрытые комнаты личных звонков
 const MAX_ROOMS = 20;
 const HISTORY_MAX = 500;
-const FILE_TTL = 2 * 3600 * 1000;   // вложения: каждые 2 часа
+const FILE_TTL = 24 * 3600 * 1000;   // вложения: каждые 24 часа
 const ROOM_TTL = 24 * 3600 * 1000;  // переписка: раз в сутки
 
 const PUB = path.join(__dirname, 'public');
